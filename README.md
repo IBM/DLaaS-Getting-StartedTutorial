@@ -5,7 +5,7 @@
 
 ### [Steps for one time Setup:](https://github.com/mypublicorg/pytorch-cifar10-in-ibm-cloud/blob/master/onetimesetup.md)
 
-Step 0. Pre requisites
+Step 0. [Pre requisites](https://github.com/IBM/DLaaS-Getting-StartedTutorial/blob/master/pre-req.md)
 
 Step 1. Login to your bluemix account
 
