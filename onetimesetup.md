@@ -37,15 +37,16 @@ $ bx service key-create <CLI_WMLi> <key_CLI_WMLi>
 $ instance_id=`bx service key-show <CLI_WMLi> <key_CLI_WMLi> | grep "instance_id"| awk -F": " '{print $2}'| cut -d'"' -f2`
 $ username=`bx service key-show <CLI_WMLi> <key_CLI_WMLi> | grep "username"| awk -F": " '{print $2}'| cut -d'"' -f2`
 $ password=`bx service key-show <CLI_WMLi> <key_CLI_WMLi> | grep "password"| awk -F": " '{print $2}'| cut -d'"' -f2`
-
-$ echo ""; echo "ML Instance Credentials:"; echo "instance_id: $instance_id"; echo "username: $username "; echo "password: $password"; echo ""
+$ url=`bx service key-show <CLI_WMLi> <key_CLI_WMLi> | grep "url"| awk -F": " '{print $2}'| cut -d'"' -f2`
+$ echo ""; echo "ML Instance Credentials:"; echo "instance_id: $instance_id"; echo "username: $username "; echo "password: $password"; echo "URL: $url"; echo ""
 ```
 
-#### 2.2 Set up Environment Variables:
+#### 2.3 Set up Environment Variables:
 ```
 $ export ML_INSTANCE=$instance_id
 $ export ML_USERNAME=$username
 $ export ML_PASSWORD=$password
+$ export ML_ENV=$url
 ```
 
 ## Step 3: Create a bucket in the Cloud Object Storage (COS) to store data
