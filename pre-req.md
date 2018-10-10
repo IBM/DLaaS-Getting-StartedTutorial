@@ -10,9 +10,7 @@
 3. Install the IBM Cloud developer tools
 
 4. Access your IBM Cloud account using cli.
-
-                       4.1. Get your API Key
-                       
+                       4.1. Get your API Key                    
                        4.2  Login using API Key
                        
 5. Target correct Org, Space and Endpoint for the tutorial.
@@ -32,18 +30,16 @@ Click on the profile avatar in the top-right-corner for the webpage.
 
 Under the account, you should see a dropdown box, with a list of all the IBM cloud accounts you have access to.
 
-Select the AI Lab account by choosing 1589313—IBM account. 
+If you have several accounts, select the "appropiate" account. (If unsure contact your admin). 
 
 <img src="img/i2.png" >
 
- 
 (Notice that sometimes the account is just listed as ‘IBM’.)
 
-Verify the account access by checking that the CLOUD FOUNDRY ORG is ‘MITIBMWatsonAiLab’
+Verify that you are able to access the account, e.g., by checking the CLOUD FOUNDRY ORG.
 
 <img src="img/i1.png">
 
-If you do not have MITIBMAiLab under Cloud Foundry Org, stop here and contact Noor Fairoza via slack or email.
 
 ### 2. Python
 If either python or pip are not installed, Goto [https://www.python.org/downloads/](https://www.python.org/downloads/) 
@@ -129,7 +125,7 @@ $ bx login –apikey <yourapikeyhere>`
 
 Use the "bx target" command to target the correct Cloud parameters.
 ```
-$ bx target -r us-south -g MITIBMWatsonAiLab   -o MITIBMWatsonAiLab -s dev
+$ bx target -r us-south -g <yourgroup>   -o <yourorg> -s dev
 ```
 
   <img src="img/v1.png">
