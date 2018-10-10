@@ -1,4 +1,4 @@
-# MITIBMCloud
+# DLaaS Getting Started Tutorial
 
 
 **Note: These steps use a Command Line Interface (CLI). There is an alternative browser used interface** 
