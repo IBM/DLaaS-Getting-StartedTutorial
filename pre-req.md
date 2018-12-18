@@ -105,7 +105,7 @@ login to [https://console.bluemix.net/iam/#/apikeys](https://console.bluemix.net
 
 Click create button. Give a name and description  and create a platform api key.
 
- <img src="img/apikey.png">
+<img src="img/apikey.png">
 
 Click `show`. Copy and save your key at a secure location.
 
@@ -119,7 +119,9 @@ Use the following command to login
 ```
 $ bx login –apikey <yourapikeyhere>`
 ```
-<img src="img/apikeylogin.png">
+
+<img src="img/apikeylogin.PNG">
+    
  
 ### 5. Target correct  Region, Resource group, Org and Space.
 
@@ -128,7 +130,7 @@ Use the "bx target" command to target the correct Cloud parameters.
 $ bx target -r us-south -g <yourgroup>   -o <yourorg> -s dev
 ```
 
-  <img src="img/v1.png">
+<img src="img/v1.png">
 
  
 ### Troubleshooting:
@@ -138,7 +140,7 @@ If you use a windows machine, you can use git bash to run the following commands
 You can download git from https://git-scm.com/downloads. 
 git bash come bundled with git.
 
- <img src="img/gitbash.png">
+<img src="img/gitbash.png">
 
 #### Python Compatibility issues
 If you have any concerns about python version compatibility, we suggest you use Anaconda.
